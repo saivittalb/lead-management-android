@@ -1,6 +1,6 @@
 # lead-management-android
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/465ebd9884094ae3837142f13857b53a)](https://www.codacy.com/app/UniverseObserver/lead-management-android?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=UniverseObserver/lead-management-android&amp;utm_campaign=Badge_Grade)
-[![Build Status](https://travis-ci.org/JBossOutreach/lead-management-android.svg?branch=master)](https://travis-ci.org/JBossOutreach/lead-management-android)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/566b0af729fc4ba08c6c46ea79ddef9d)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=saivittalb/lead-management-android&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.com/saivittalb/lead-management-android.svg?token=z721JA78NQMYhyzx6xMp&branch=master)](https://travis-ci.com/saivittalb/lead-management-android)
 
 ## Lead (sales lead)
 A sales lead is a potential sales contact, an individual or organization that expresses an interest in your goods or services. Leads are typically obtained through the referral of an existing customer, or through a direct response to advertising or publicity. A company's marketing department is typically responsible for lead generation.
