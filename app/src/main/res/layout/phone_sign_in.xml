@@ -1,0 +1,99 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:minWidth="150dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/sign_in_via_phone"
+        android:textAllCaps="true"
+        android:drawableRight="@drawable/ic_phone_24dp"
+        android:drawableEnd="@drawable/ic_phone_24dp"
+        android:textColor="@android:color/black"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/phone_hint"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Code is valid for next: 80 s"
+        android:layout_below="@id/phone_hint"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:id="@+id/codeValideHint"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codeValideHint"
+        android:layout_marginTop="15dp"
+        android:id="@+id/phone_input_wrapper"
+        android:hint="@string/phone_number">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/phone_input" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_input_wrapper"
+        android:layout_marginTop="10dp"
+        android:id="@+id/verification_input_wrapper"
+        android:hint="@string/enter_received_code">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/phone_verification" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/phone_input_wrapper"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/phont_btn"
+        android:id="@+id/phone_submit"
+        android:textColor="@android:color/white"
+        android:text="LOGIN"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/verification_input_wrapper"
+        android:background="@drawable/phont_btn"
+        android:text="ENTER CODE"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:id="@+id/verificationButton"
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>

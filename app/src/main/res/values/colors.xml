@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ED213A</color>
+    <color name="colorPrimaryDark">#93291E</color>
+    <color name="colorAccent">#ED213A</color>
+    <color name="colorPopup">#F2F2F2</color>
+    <color name="darkColorPrimary">#04bcf4</color>
+    <color name="darkColorPrimaryDark">#153f87</color>
+    <color name="darkColorAccent">#FF4081</color>
+    <color name="darkcardcolour">#212121</color>
+    <color name="white">#fff</color>
+</resources>

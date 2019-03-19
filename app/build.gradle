@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.community.jboss.leadmanagement"
+        minSdkVersion 16
+        targetSdkVersion rootProject.ext.compileSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:design:28.0.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // Support library
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:preference-v7:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:preference-v14:${rootProject.ext.supportLibVersion}"
+    // Constraint layout
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
+    //Cardview
+    implementation "com.android.support:cardview-v7:${rootProject.ext.supportLibVersion}"
+    // Test
+    implementation "com.android.support:support-v4:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:design:${rootProject.ext.supportLibVersion}"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    // ButterKnife
+    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    // Icepick
+    implementation 'frankiesardo:icepick:3.2.0'
+    annotationProcessor 'frankiesardo:icepick-processor:3.2.0'
+    //Circular Imageview
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    // Timber
+    implementation 'com.jakewharton.timber:timber:4.6.0'
+    // Architecture components
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    //Google/Firebase
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.7'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.android.gms:play-services-drive:16.0.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    // Info Slider
+    implementation 'com.github.msayan:tutorial-view:v1.0.6'
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+}
+//apply plugin: 'com.google.gms.google-services'

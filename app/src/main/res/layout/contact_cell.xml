@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_cell_layout">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/contact_avatar"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/contact_avatar"
+        android:layout_toRightOf="@id/contact_avatar"
+        android:layout_marginTop="12.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toLeftOf="@+id/contact_delete"
+        android:layout_toStartOf="@+id/contact_delete"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/contact_avatar"
+        android:layout_toEndOf="@id/contact_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/contact_name"
+        android:layout_alignBottom="@id/contact_avatar"
+        android:layout_toLeftOf="@id/contact_delete"
+        android:layout_toStartOf="@id/contact_delete"
+        android:maxLines="1"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:background="@android:color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@id/contact_delete"
+        android:visibility="gone"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.5"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
